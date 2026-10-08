@@ -66,12 +66,12 @@
     if (/\b(contact|email|hire|hiring|reach|book|call|talk)\b/.test(q)) return ['You can reach Rej at Rejxgodinez27@gmail.com to discuss your project or the support you need.', {href:'mailto:Rejxgodinez27@gmail.com',label:'Email Rej ↗'}];
     if (/\b(price|pricing|rate|rates|cost|available|availability|schedule)\b/.test(q)) return ['Rates and current availability are confirmed directly with Rej. Share your scope and preferred schedule by email.', {href:'mailto:Rejxgodinez27@gmail.com',label:'Discuss your needs ↗'}];
     if (/\b(project|projects|workflow|workflows|n8n|automation|automations)\b/.test(q)) return ['The Project Lab includes an interactive workflow concept and an n8n workflow screenshot. Rej is currently learning automation with n8n, Zapier, and Make.', {href:'#projects',label:'Explore the Project Lab ↗'}];
-    if (/\b(experience|background|career|years|exl|telstra)\b/.test(q)) return ['Rej has eight years of professional experience, including more than six years in workforce management and real-time analysis. His background includes staffing, KPI monitoring, reporting, and customer operations.', {href:'#experience',label:'View experience ↗'}];
-    if (/\b(service|services|support|offer|help|skills|do)\b/.test(q)) return ['Rej supports workforce planning, real-time analysis, operational reporting, dashboards, and executive administration, including calendar and email coordination.', {href:'#services',label:'Explore services ↗'}];
-    if (/\b(tools|excel|tableau|power\s?bi|software|notion|google)\b/.test(q)) return ['The portfolio lists Excel, Power BI, Tableau, Google Workspace, Verint, Notion, Asana, Slack, Teams, Zendesk, and Jobber.'];
+    if (/\b(experience|background|career|years|exl|telstra|accenture|underwriting|insurance)\b/.test(q)) return ['Rej’s background includes commercial trucking insurance and underwriting support at EXL Services Philippines (Feb 2024–Sep 2026), workforce real-time analysis at Accenture on Verizon Wireline B2B (May 2020–Dec 2023), and earlier customer service roles at Teleperformance and TeleTech.', {href:'#experience',label:'View experience ↗'}];
+    if (/\b(service|services|support|offer|help|skills|do)\b/.test(q)) return ['Rej supports insurance submissions and policy processing, quote and document coordination, real-time operational monitoring, reporting, email communication, and administrative follow-ups. AI-assisted drafts and summaries receive human review.', {href:'#services',label:'Explore services ↗'}];
+    if (/\b(tools|excel|software|google|sentry|cypress|bass|rocklake|chatgpt)\b/.test(q)) return ['Rej works with Microsoft Word, Excel, Google Workspace, Gmail, Google Sheets, ChatGPT, Sentry IMS, Cypress, BASS Underwriters, and Rocklake.'];
     if (/\b(where|location|timezone|time zone|based|philippines)\b/.test(q)) return ['Rej is based in the Philippines (GMT+8). Contact him directly to discuss schedule overlap.'];
     if (/\b(hello|hi|hey|thanks|thank)\b/.test(q)) return ['Hello! I can help you explore Rej’s services, experience, projects, and contact details. What would you like to know?'];
-    if (/\b(who|about|name)\b/.test(q)) return ['Regolo “Rej” Godinez III is an Executive Assistant & Operations Analyst based in the Philippines.', {href:'#about',label:'Meet Rej ↗'}];
+    if (/\b(who|about|name)\b/.test(q)) return ['Regolo “Rej” Godinez III provides insurance VA, underwriting assistance, and operations support from the Philippines.', {href:'#about',label:'Meet Rej ↗'}];
     return ['I can answer common questions about this portfolio. Try services, experience, projects, or contact. For other questions, Rej can help by email.', {href:'mailto:Rejxgodinez27@gmail.com',label:'Email Rej ↗'}];
   }
   function send(question) {
@@ -86,3 +86,4 @@
   widget.querySelectorAll('[data-topic]').forEach(button => button.addEventListener('click', () => send(button.dataset.topic)));
   addMessage('Hi! I’m Rej’s automated portfolio guide. Ask me about services, experience, or the workflow projects, or choose a topic below.');
 })();
+
